@@ -1,0 +1,25 @@
+﻿
+<bbbs>xxx</bbbs>
+
+@section VueScripts{
+    <template id="header">
+        <div>
+            Header
+        </div>
+    </template>
+    <script>
+        alert('oye')
+        Vue.component('header', {
+            el: '#header',
+            mounted: function () {
+                alert('mounted');
+            },
+            data: {
+
+            },
+            method: {
+
+            }
+        });
+    </script>
+}

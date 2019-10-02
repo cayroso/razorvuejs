@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+@section VueScripts{
+    <template id="v-header">
+        <div>
+            Header for app = {{this.appName}}
+            <button v-on:click="$emit('event1')">Emit</button>
+        </div>
+    </template>
+
+    <script>
+
+        Vue.component('v-header', {
+            template: '#v-header',
+            mounted: function () {
+                alert('mounted');
+            },
+            data: function () {
+                return {
+                    appName: 'index'
+                };
+            }
+            
+        });
+    </script>
+}

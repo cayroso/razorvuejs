@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorVueJs", "RazorVueJs\RazorVueJs.csproj", "{7E08216E-CCDA-4E66-B7EB-C86C5379CA23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorVueJsWeb", "RazorVueJsWeb\RazorVueJsWeb.csproj", "{B9E11654-4F98-46E1-A44B-51BDE0DCC901}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E08216E-CCDA-4E66-B7EB-C86C5379CA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E08216E-CCDA-4E66-B7EB-C86C5379CA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E08216E-CCDA-4E66-B7EB-C86C5379CA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E08216E-CCDA-4E66-B7EB-C86C5379CA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E11654-4F98-46E1-A44B-51BDE0DCC901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E11654-4F98-46E1-A44B-51BDE0DCC901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E11654-4F98-46E1-A44B-51BDE0DCC901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E11654-4F98-46E1-A44B-51BDE0DCC901}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9577B632-44E0-4CA7-A006-BD4D24609590}
+	EndGlobalSection
+EndGlobal

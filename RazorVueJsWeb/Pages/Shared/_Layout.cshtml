@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RazorVueJsWeb</title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <div class="container" id="app">
+
+        <v-header v-on:event1="receiveEvent">
+            header in layout {{appName}}
+        </v-header>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+    </div>
+
+    <script src="https://unpkg.com/vue" crossorigin="anonymous"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+    @RenderSection("VueScripts", required: false)
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                appName: 'app-name'
+            },
+            methods: {
+                receiveEvent: function() {
+                    debugger;
+                }
+            }
+        });
+    </script>
+
+
+</body>
+</html>
